@@ -1,0 +1,5 @@
+makeMyMomentumParcelSubmodels.C
+makeMyCollidingParcelSubmodels.C
+makeMyMPPICParcelSubmodels.C
+
+LIB = $(FOAM_USER_LIBBIN)/libParticleForces
