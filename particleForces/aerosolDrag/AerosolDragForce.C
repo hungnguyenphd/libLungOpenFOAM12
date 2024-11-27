@@ -30,8 +30,15 @@ License
 template<class CloudType>
 Foam::scalar Foam::AerosolDragForce<CloudType>::CdRe(const scalar Re)
 {
-    return 24.0*(1 + 0.15*pow(Re,0.687)); //Koullapis et al. 2018 European Journal of
-                                          // Pharmaceutical Sciences;
+    //Koullapis et al. 2018 European Journal of Pharmaceutical Sciences;
+    if (Re <= 1000)
+    {
+        return 24.0*(1 + 0.15*pow(Re,0.687)); 
+    }
+    else if (Re > 1000)
+    {
+        return 0.44*Re;
+    }
 }
 
 template<class CloudType>
@@ -95,7 +102,7 @@ Foam::forceSuSp Foam::AerosolDragForce<CloudType>::calcCoupled
     const scalar dt,
     const scalar mass,
     const scalar Re,
-    const scalar muc
+    const scalar muc //mu of continous flow
 ) const
 {
     const scalar alpha = 1; //particle-particle interaction factor
