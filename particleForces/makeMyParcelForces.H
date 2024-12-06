@@ -26,8 +26,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#ifndef makeParcelForces_H
-#define makeParcelForces_H
+#ifndef makeMyParcelForces_H
+#define makeMyParcelForces_H
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -26,8 +26,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#ifndef makeThermoParcelForces_H
-#define makeThermoParcelForces_H
+#ifndef makeMyThermoParcelForces_H
+#define makeMyThermoParcelForces_H
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 #include "makeMyParcelForces.H"
